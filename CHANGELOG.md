@@ -3,7 +3,8 @@
 ### Bug Fixes
 
 ### Improvements
-* Update to BrainFlow 5.1.0
+* Update to BrainFlow 5.4.0
+* Update Mac build to Processing 4 to support 
 
 # v5.1.0
 
