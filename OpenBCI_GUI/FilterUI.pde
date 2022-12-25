@@ -125,12 +125,12 @@ class FilterUIPopup extends PApplet implements Runnable {
     }
 
     @Override
-    void settings() {
+    public void settings() {
         size(fixedWidth, variableHeight);
     }
 
     @Override
-    void setup() {
+    public void setup() {
         surface.setTitle(headerMessage);
         surface.setAlwaysOnTop(true);
         surface.setResizable(false);
@@ -143,7 +143,7 @@ class FilterUIPopup extends PApplet implements Runnable {
     }
 
     @Override
-    void draw() {
+    public void draw() {
 
         // Important: Reset the CP5 graphics reference points X,Y,W,H at the beginning of the next draw after screen has been resized.
         // Otherwise, the numbers are wrong.
@@ -272,7 +272,7 @@ class FilterUIPopup extends PApplet implements Runnable {
     }
 
     @Override
-    void mousePressed() {
+    public void mousePressed() {
         if (expanderIsHover) {
             filterSettings.values.filterChannelSelect = 
                 filterSettings.values.filterChannelSelect == FilterChannelSelect.CUSTOM_CHANNELS ?
@@ -283,12 +283,12 @@ class FilterUIPopup extends PApplet implements Runnable {
     }
 
     @Override
-    void mouseReleased() {
+    public void mouseReleased() {
 
     }
 
     @Override
-    void exit() {
+    public void exit() {
         dispose();
         filterUIPopupIsOpen = false;
     }

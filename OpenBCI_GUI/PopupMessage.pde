@@ -51,12 +51,12 @@ class PopupMessage extends PApplet implements Runnable {
     }
 
     @Override
-    void settings() {
+    public void settings() {
         size(defaultWidth, defaultHeight);
     }
 
     @Override
-    void setup() {
+    public void setup() {
         surface.setTitle(headerMessage);
         surface.setAlwaysOnTop(true);
         surface.setResizable(false);
@@ -80,7 +80,7 @@ class PopupMessage extends PApplet implements Runnable {
     }
 
     @Override
-    void draw() {
+    public void draw() {
         final int w = defaultWidth;
         final int h = defaultHeight;
 
@@ -115,17 +115,17 @@ class PopupMessage extends PApplet implements Runnable {
     }
 
     @Override
-    void mousePressed() {
+    public void mousePressed() {
 
     }
 
     @Override
-    void mouseReleased() {
+    public void mouseReleased() {
 
     }
 
     @Override
-    void exit() {
+    public void exit() {
         dispose();
     }
 
